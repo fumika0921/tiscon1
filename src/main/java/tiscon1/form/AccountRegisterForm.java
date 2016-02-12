@@ -1,8 +1,10 @@
 package tiscon1.form;
 
 import lombok.Data;
+import org.hibernate.validator.constraints.Email;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 
@@ -15,11 +17,12 @@ public class AccountRegisterForm implements Serializable {
     @NotNull
     private String name;
 
-
+    @Email
     @NotNull
     private String email;
 
     @Size(min = 6)
+    @Pattern(regexp= "^(?=.*[a-zA-Z])(?=.*[0-9]).*")
     @NotNull
     private String password;
 }
