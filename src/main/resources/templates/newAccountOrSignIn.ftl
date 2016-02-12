@@ -18,9 +18,13 @@
                     <div class="box">
                         <h1>New account</h1>
 
-                        <p class="lead">Not our registered customer yet?</p>
-                        <p>With registration with us new world of fashion, fantastic discounts and much more opens to you! The whole process will not take you more than a minute!</p>
-                        <p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>
+                        <p class="lead">登録はまだお済ではありませんか？</p>
+                        <p>登録することで新しいファッション、幻想的な割引の世界がオープン！1分で登録できます</p>
+                         <p class="text-muted">もしお困りのことがございましたら<a href="contact.html">こちらにご連絡ください</a>
+
+                     <#--    <p class="lead">Not our registered customer yet?</p>  -->
+                     <#--   <p>With registration with us new world of fashion, fantastic discounts and much more opens to you! The whole process will not take you more than a minute!</p>  -->
+                    <#--    <p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>  -->
 
                         <hr>
 
@@ -48,7 +52,7 @@
 
                             <div class="form-group${error}">
 
-                                <label for="password">Password</label>
+                                <label for="password">Password（英数字混合。6文字以上）</label>
                                 <input type="password" class="form-control" id="password" name="password" value="${spring.stringStatusValue}">
                                 <@spring.showErrors "<br/>", "help-block"/>
                             </div>
@@ -63,9 +67,11 @@
                     <div class="box">
                         <h1>Login</h1>
 
-                        <p class="lead">Already our customer?</p>
-                        <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
-                            mi vitae est. Mauris placerat eleifend leo.</p>
+                    <p class="lead">ご登録はお済ですか？</p>
+                    <p class="text-muted">お済の方はこちらからログインしてください</p>
+                   <#--     <p class="lead">Already our customer?</p> -->
+                   <#--     <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies
+                            mi vitae est. Mauris placerat eleifend leo.</p> -->
 
                         <hr>
 

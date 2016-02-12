@@ -2,6 +2,7 @@ package tiscon1.form;
 
 import lombok.Data;
 import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
@@ -18,6 +19,7 @@ public class AccountRegisterForm implements Serializable {
     private String name;
 
     @Email
+    @NotEmpty
     @NotNull
     private String email;
 
